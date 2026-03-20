@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Практична робота: Арифметичні операції</title>
+</head>
+<body>
+  <h2>Практична робота: Арифметичні операції та обчислення</h2>
+
+  <script>
+    let num1 = Number(prompt("Введіть перше число:"));
+    let num2 = Number(prompt("Введіть друге число:"));
+    let num3 = Number(prompt("Введіть третє число:"));
+
+    let average = (num1 + num2 + num3) / 3;
+    console.log("Середнє арифметичне:", average);
+
+    console.log("Модуль чисел:", Math.abs(num1), Math.abs(num2), Math.abs(num3));
+    console.log("Округлення в більшу сторону:", Math.ceil(num1), Math.ceil(num2), Math.ceil(num3));
+    console.log("Округлення в меншу сторону:", Math.floor(num1), Math.floor(num2), Math.floor(num3));
+    console.log("Піднесення до степеня (num1^num2, num2^num3):", Math.pow(num1, num2), Math.pow(num2, num3));
+
+    let checkNumber = 5;
+    console.log(`Перевірка ділення на ${checkNumber}:`);
+    console.log(num1 % checkNumber === 0 ? ${num1} ділиться на ${checkNumber} : `${num1} не ділиться на ${checkNumber}`);
+    console.log(num2 % checkNumber === 0 ? ${num2} ділиться на ${checkNumber} : `${num2} не ділиться на ${checkNumber}`);
+    console.log(num3 % checkNumber === 0 ? ${num3} ділиться на ${checkNumber} : `${num3} не ділиться на ${checkNumber}`);
+
+    if (num1 + num2 > num3 && num1 + num3 > num2 && num2 + num3 > num1) {
+      console.log("Трикутник з такими сторонами існує.");
+    } else {
+      console.log("Трикутник з такими сторонами НЕ існує.");
+    }
+  </script>
+</body>
+</html> 
